@@ -1,0 +1,267 @@
+/*******************************/
+/********* Footer CSS **********/
+/*******************************/
+.footer {
+    position: relative;
+    margin-top: 60px;
+    padding-top: 80px;
+    background: #030f27;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer .footer-contact,
+.footer .footer-link,
+.footer .newsletter {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.footer h2 {
+    position: relative;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fdbe33;
+}
+
+.footer h2::after {
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background: #fdbe33;
+}
+
+/* Footer Links */
+.footer .footer-link a {
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+    transition: 0.3s;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.footer .footer-link a::before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 8px;
+}
+
+.footer .footer-link a:hover {
+    color: #fdbe33;
+    letter-spacing: 0.5px;
+}
+
+/* Contact Icons */
+.footer .footer-contact p {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer .footer-social {
+    margin-top: 15px;
+}
+
+.footer .footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    margin-right: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.footer .footer-social a svg {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.footer .footer-social a:hover {
+    background: #fdbe33;
+    border-color: #fdbe33;
+}
+
+.footer .footer-social a:hover svg {
+    color: #030f27;
+}
+
+/* Newsletter */
+.footer .newsletter .form {
+    position: relative;
+    max-width: 400px;
+}
+
+.footer .newsletter input {
+    height: 48px;
+    width: 100%;
+    border: 2px solid #121518;
+    border-radius: 0;
+    padding: 0 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.footer .newsletter .btn {
+    position: absolute;
+    top: -10px;
+    right: 4px;
+    height: 40px;
+    padding: 0 15px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #fdbe33;
+    background: #121518;
+    border: 2px solid #fdbe33;
+    border-radius: 0;
+    transition: 0.3s;
+}
+
+.footer .newsletter .btn:hover {
+    color: #121518;
+    background: #fdbe33;
+}
+
+/* Footer Menu */
+.footer .footer-menu .f-menu {
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-menu .f-menu a {
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer .footer-menu .f-menu a:last-child {
+    border-right: none;
+}
+
+.footer .footer-menu .f-menu a:hover {
+    color: #fdbe33;
+}
+
+/* Copyright */
+.footer .copyright {
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .copyright p {
+    margin: 0;
+    color: #ffffff;
+}
+
+.footer .copyright a {
+    color: #fdbe33;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-decoration: none;
+}
+
+.footer .copyright a:hover {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .footer {
+        padding-top: 60px;
+    }
+
+    .footer .footer-contact,
+    .footer .footer-link,
+    .footer .newsletter {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .footer-social a {
+        margin: 5px;
+    }
+
+    .footer .footer-menu .f-menu a {
+        display: inline-block;
+        margin: 5px 8px;
+        padding: 0;
+        border: none;
+    }
+}
+
+
+/*******************************/
+/********** About CSS **********/
+/*******************************/
+.about {
+    position: relative;
+    width: 100%;
+    padding: 45px 0;
+}
+
+.sectionHeader {
+    margin-bottom: 30px;
+}
+
+.aboutImg {
+    position: relative;
+    height: 100%;
+}
+
+.aboutImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.aboutText p {
+    font-size: 16px;
+}
+
+.btn {
+    position: relative;
+    margin-top: 15px;
+    padding: 15px 35px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #030f27;
+    border-radius: 0;
+    background: #fdbe33;
+    transition: 0.3s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    color: #fdbe33;
+    background: #030f27;
+}
+
+@media (max-width: 767.98px) {
+    .aboutImg {
+        margin-bottom: 30px;
+        height: auto;
+    }
+}
