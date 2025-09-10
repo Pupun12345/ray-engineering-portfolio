@@ -1,6 +1,10 @@
 "use client";
+<<<<<<< HEAD
 import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+=======
+import { useEffect } from "react";
+>>>>>>> 946051078771ed22a9ea7f335495e171744d2270
 import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import AOS from "aos";
@@ -8,6 +12,7 @@ import "aos/dist/aos.css";
 import "./Contact.css";
 
 export default function ContactComponent() {
+<<<<<<< HEAD
   const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID as string;
   const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID as string;
   const publicKey = process.env.NEXT_PUBLIC_PUBLIC_KEY as string;
@@ -56,6 +61,8 @@ if (!form.current) return;
       );
   };
 
+=======
+>>>>>>> 946051078771ed22a9ea7f335495e171744d2270
   useEffect(() => {
     AOS.init({ duration: 800, once: true });
   }, []);
@@ -122,6 +129,7 @@ if (!form.current) return;
             {/* Contact Form */}
             <Col md={6} data-aos="fade-left">
               <div className="contact-form">
+<<<<<<< HEAD
                 <p className="text-orange text-center mb-2">{success}</p>
                 <Form id="contactForm" onSubmit={sendEmail} ref={form}>
                   <Form.Group className="mb-3">
@@ -130,6 +138,12 @@ if (!form.current) return;
                       name="name"
                       value={name}
                       onChange={handleName}
+=======
+                <Form id="contactForm">
+                  <Form.Group className="mb-3">
+                    <Form.Control
+                      type="text"
+>>>>>>> 946051078771ed22a9ea7f335495e171744d2270
                       placeholder="Your Name"
                       required
                       className="form-input"
@@ -138,9 +152,12 @@ if (!form.current) return;
                   <Form.Group className="mb-3">
                     <Form.Control
                       type="email"
+<<<<<<< HEAD
                       name="from_email"
                       value={email}
                       onChange={handleEmail}
+=======
+>>>>>>> 946051078771ed22a9ea7f335495e171744d2270
                       placeholder="Your Email"
                       required
                       className="form-input"
@@ -150,9 +167,12 @@ if (!form.current) return;
                     <Form.Control
                       type="text"
                       placeholder="Subject"
+<<<<<<< HEAD
                       name="subject"
                       value={subject}
                       onChange={handleSubject}
+=======
+>>>>>>> 946051078771ed22a9ea7f335495e171744d2270
                       required
                       className="form-input"
                     />
@@ -162,9 +182,12 @@ if (!form.current) return;
                       as="textarea"
                       rows={6}
                       placeholder="Message"
+<<<<<<< HEAD
                       name="message"
                       value={message}
                       onChange={handleMessage}
+=======
+>>>>>>> 946051078771ed22a9ea7f335495e171744d2270
                       required
                       className="form-input"
                     />
@@ -180,4 +203,8 @@ if (!form.current) return;
       </div>
     </>
   );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 946051078771ed22a9ea7f335495e171744d2270
