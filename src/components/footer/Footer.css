@@ -103,21 +103,22 @@
   display: flex;
   max-width: 400px;
   margin-top: 10px;
+  width: 100%;
 }
 
 .footer .newsletter input {
-  height: 64px; /* increased height */
   flex: 1;
+  height: 60px; /* same height */
   border: 2px solid #fdbe33;
   border-right: none;
-  padding: 0 16px; /* more padding */
-  font-size: 17px; /* bigger text */
-  border-radius: 8px 0 0 8px; /* softer rounded corners */
+  padding: 0 16px;
+  font-size: 17px;
+  border-radius: 8px 0 0 8px;
+  box-sizing: border-box;
 }
 
-
 .footer .newsletter .btn {
-  height: 64px; /* match input */
+  height: 60px; /* match input */
   padding: 0 28px;
   font-size: 16px;
   font-weight: 600;
@@ -129,8 +130,8 @@
   border-radius: 0 8px 8px 0;
   transition: 0.3s;
   cursor: pointer;
+  box-sizing: border-box;
 }
-
 
 .footer .newsletter .btn:hover {
   background: #121518;
@@ -188,7 +189,7 @@
 
 /* ✅ Logo styling */
 .footer img.footer-logo {
-  height: 24px; /* neat consistent size */
+  height: 24px;
   width: auto;
   margin-left: 6px;
   vertical-align: middle;
@@ -222,17 +223,14 @@
     margin: 5px 8px;
     border: none;
   }
+  /* ✅ keep input & button side by side even on mobile */
   .footer .newsletter .form {
-    flex-direction: column;
-  }
-  .footer .newsletter input {
-    border-right: 2px solid #fdbe33;
-    border-radius: 6px;
-    margin-bottom: 10px;
-  }
-  .footer .newsletter .btn {
+    flex-direction: row;
     width: 100%;
-    border-left: 2px solid #fdbe33;
-    border-radius: 6px;
+  }
+  .footer .newsletter input,
+  .footer .newsletter .btn {
+    height: 56px; /* slightly smaller for mobile */
+    font-size: 15px;
   }
 }
