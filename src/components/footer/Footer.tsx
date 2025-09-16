@@ -88,7 +88,7 @@ export default function Footer() {
           <Link href="#">Privacy policy</Link>
           <Link href="#">Cookies</Link>
           <Link href="#">Help</Link>
-          <Link href="#">FQAs</Link>
+          <Link href="#">FAQ</Link> {/* ✅ Changed from FQAs to FAQ */}
         </div>
       </div>
 
