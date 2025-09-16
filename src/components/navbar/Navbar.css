@@ -1,0 +1,225 @@
+/* ===============================
+   RayEngineering Header Styles
+   =============================== */
+
+/* Header wrapper */
+.header {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ---------- Top Bar Styles ---------- */
+.top-bar {
+  position: relative;
+  background: #fdbe33;
+  padding: 0 60px;
+  transition: all 0.3s ease-in-out;
+}
+
+.top-bar.hidden {
+  display: none;
+}
+
+/* Logo + Text */
+.top-bar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.top-bar .logo img {
+  height: 80px;
+  width: auto;
+  object-fit: contain;
+}
+
+.top-bar .logo h1 {
+  margin: 0;
+  color: #030f27;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.2;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Top Bar Items */
+.top-bar .top-bar-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.top-bar .top-bar-icon {
+  font-size: 22px;
+  color: #030f27;
+}
+
+.top-bar .top-bar-text h3 {
+  margin: 0;
+  color: #030f27;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.top-bar .top-bar-text p {
+  margin: 0;
+  color: #030f27;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+/* ---------- Nav Bar Styles ---------- */
+.nav-bar {
+  background: #fdbe33;
+  transition: all 0.3s ease-in-out;
+  padding: 0 75px;
+}
+
+.nav-bar .container-fluid {
+  padding: 0;
+}
+
+.nav-bar .navbar {
+  height: 100%;
+  background: #030f27 !important;
+  padding: 20px;
+}
+
+/* Sticky nav */
+.nav-sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 1366px;
+  margin: 0 auto;
+  z-index: 999;
+  background: #030f27 !important;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: fadeInUpSticky 0.5s cubic-bezier(0.3, 1, 0.7, 1);
+  padding: 0 40px !important;
+}
+
+/* ---------- Navbar Links ---------- */
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  padding: 10px 10px 8px 10px;
+  color: #ffffff !important;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fdbe33 !important;
+}
+
+/* ---------- Buttons ---------- */
+.nav-bar .btn {
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 0;
+  padding: 8px 16px;
+  text-decoration: none;
+  background: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-bar .btn:hover {
+  color: #030f27 !important;
+  background: #fdbe33;
+  border-color: #fdbe33;
+  text-decoration: none;
+}
+
+/* ---------- Navbar Toggler ---------- */
+.navbar-toggler {
+  border: 1px solid #ffffff;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='m4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeInUpSticky {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 991.98px) {
+  .top-bar .logo {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .nav-bar {
+    padding: 0; /* ✅ remove side gaps */
+  }
+
+  .nav-bar .navbar {
+    padding: 15px;
+  }
+
+  .nav-link {
+    padding: 10px !important;
+    width: 100%;          /* ✅ full width links */
+    text-align: center;   /* ✅ center links */
+  }
+
+  .collapse.navbar-collapse {
+    background: #030f27;  /* ✅ full width mobile dropdown */
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .nav-bar .btn {
+    display: block !important;
+    margin: 15px auto 0;
+    text-align: center;
+    width: 90%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .top-bar {
+    height: auto;
+    padding: 15px 0;
+  }
+
+  .top-bar .logo h1 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .top-bar .logo img {
+    height: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-brand {
+    display: none !important;
+  }
+
+  .nav-link {
+    padding: 8px 15px !important;
+    font-size: 15px !important;
+    text-transform: uppercase !important;
+  }
+}

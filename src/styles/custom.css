@@ -1,0 +1,253 @@
+/*******************************/
+/******** General Styles *******/
+/*******************************/
+body {
+  color: #666;
+  background: #ddd;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  color: #030f27;
+}
+
+a {
+  color: #666;
+  transition: 0.3s;
+}
+a:hover, a:focus {
+  color: #ffae00;
+  text-decoration: none;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  background: #fff;
+}
+
+/*******************************/
+/******** Carousel CSS *********/
+/*******************************/
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff;
+}
+
+.carousel-caption h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.carousel-caption p {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.carousel-caption .btn {
+  padding: 15px 35px;
+  font-size: 18px;
+  color: #fff;
+  border: 2px solid #fff;
+  background: transparent;
+}
+
+.carousel-caption .btn:hover {
+  background: #fdbe33;
+  border-color: #fdbe33;
+  color: #030f27;
+}
+
+/*******************************/
+/******** Feature CSS **********/
+/*******************************/
+.feature {
+  position: relative;
+  margin: 45px 0;
+  background: #030f27;
+  color: #fff;
+}
+
+.feature .feature-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px;
+  min-height: 250px;
+}
+
+.feature .top-bar-icon {
+  margin-right: 20px;
+}
+
+/*******************************/
+/******* Responsive ************/
+/*******************************/
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+  .carousel-caption p {
+    font-size: 20px;
+  }
+  .feature .feature-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature .top-bar-icon {
+    margin-bottom: 15px;
+  }
+}
+
+
+/*******************************/
+/********** Video CSS **********/
+/*******************************/
+.video {
+  position: relative;
+  margin: 45px 0;
+  height: 500px;
+  background: linear-gradient(
+      rgba(3, 15, 39, 0.9),
+      rgba(3, 15, 39, 0.9)
+    ),
+    url(/img/carousel-1.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video .btn-play {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  width: 32px;
+  height: 44px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  padding: 18px 20px 18px 28px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.video .btn-play:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: #fdbe33;
+  border-radius: 50%;
+  animation: pulse-border 1.5s ease-out infinite;
+}
+
+.video .btn-play:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background: #fdbe33;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.video .btn-play:hover:after {
+  background-color: #e0a800;
+}
+
+.video .btn-play span {
+  display: block;
+  position: relative;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-left: 32px solid #030f27;
+  border-top: 22px solid transparent;
+  border-bottom: 22px solid transparent;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
+}
+
+/* Modal customization */
+.video-modal-content {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.btn-close-custom {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: -20px;
+  right: -20px;
+  font-size: 30px;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 50%;
+  z-index: 999;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.ratio {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+}
+
+.ratio iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+

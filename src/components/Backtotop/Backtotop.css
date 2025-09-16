@@ -1,0 +1,45 @@
+.back-to-top {
+  position: fixed;          
+  right: 25px;
+  bottom: 25px;
+  width: 55px;
+  height: 55px;
+  background: #fdbe33;     /* yellow */
+  color: #030f27;          /* icon dark blue */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 50%;      /* fully round */
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.35s ease;
+  z-index: 1100;           /* above footer */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* stylish shadow */
+}
+
+/* Visible state */
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Hover effect */
+.back-to-top:hover {
+  background: #030f27;   /* dark blue */
+  color: #fdbe33;        /* icon yellow */
+  transform: translateY(-5px) scale(1.08); /* lift + zoom */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Add subtle glowing animation */
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(253, 190, 51, 0.6); }
+  70% { box-shadow: 0 0 0 15px rgba(253, 190, 51, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(253, 190, 51, 0); }
+}
+
+.back-to-top.show {
+  animation: pulse 2s infinite;
+}

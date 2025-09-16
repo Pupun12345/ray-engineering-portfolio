@@ -1,0 +1,119 @@
+/* Page Header */
+.page-header {
+  position: relative;
+  background: #fdbe33;
+  padding: 60px 0;
+  text-align: center;
+}
+.page-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.page-header a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Section Header */
+.section-header {
+  margin-bottom: 40px;
+}
+.section-header p {
+  color: #f9aa01;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.section-header h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Services */
+.service .service-item {
+  background: #fff;
+  border: 1px solid #eee;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.service .service-img {
+  position: relative;
+  overflow: hidden;
+}
+.service .service-img img {
+  width: 100%;
+  transition: 0.5s;
+}
+.service .service-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(249, 170, 1, 0.9);
+  color: #fff;
+  padding: 20px;
+  transition: 0.5s;
+}
+.service-item:hover .service-overlay {
+  bottom: 0;
+}
+.service .service-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: #001c40;
+  color: #fff;
+}
+.service .service-text h3 {
+  font-size: 18px;
+  margin: 0;
+}
+.service .service-text .btn {
+  background: #f9aa01;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 50%;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.service .service-text .btn:hover {
+  background: #000;
+}
+
+/* FAQ */
+.faq {
+  padding: 60px 0;
+}
+.faq .section-header p {
+  color: #f9aa01;
+}
+.faq .accordion-button {
+  font-weight: 500;
+  background: #001c40;
+  color: #fff;
+}
+.faq .accordion-button:not(.collapsed) {
+  background: #f9aa01;
+  color: #000;
+  box-shadow: none;
+}
+.faq .accordion-body {
+  background: #fff8e1; /* light yellow background */
+  border-left: 3px solid #f9aa01;
+  padding: 20px;
+  transition: background 0.3s ease;
+  margin-left: -3px;
+}
+.faq .accordion-item {
+  border: none;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+}

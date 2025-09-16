@@ -1,0 +1,234 @@
+/*******************************/
+/******* Page Header CSS *******/
+/*******************************/
+.page-header {
+  position: relative;
+  margin-bottom: 45px;
+  padding: 90px 0;
+  text-align: center;
+  background: #fdbe33;
+}
+
+.page-header h2 {
+  position: relative;
+  color: #030f27;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+}
+
+.page-header h2::after {
+  position: absolute;
+  content: "";
+  width: 100px;
+  height: 2px;
+  left: calc(50% - 50px);
+  bottom: 0;
+  background: #030f27;
+}
+
+.page-header a {
+  position: relative;
+  padding: 0 12px;
+  font-size: 22px;
+  color: #030f27;
+  text-decoration: none;
+}
+
+.page-header a:hover {
+  color: #ffffff;
+}
+
+.page-header a::after {
+  position: absolute;
+  content: "/";
+  width: 8px;
+  height: 8px;
+  top: -2px;
+  right: -7px;
+  text-align: center;
+  color: #121518;
+}
+
+.page-header a:last-child::after {
+  display: none;
+}
+
+/*******************************/
+/******* Section Header ********/
+/*******************************/
+.section-header {
+  position: relative;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.section-header p {
+  color: #fdbe33;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.section-header h2 {
+  margin: 0;
+  position: relative;
+  font-size: 50px;
+  font-weight: 700;
+}
+
+/*******************************/
+/********* About CSS ***********/
+/*******************************/
+.about {
+  position: relative;
+  padding: 45px 0;
+}
+
+.about-img {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.about-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.about-text {
+  margin-top: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  color: #444;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-text .btn {
+  display: inline-block;
+  background: #fdbe33;
+  color: #030f27;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.about-text .btn:hover {
+  background: #030f27;
+  color: #ffffff;
+}
+
+/*******************************/
+/********** Fact CSS ***********/
+/*******************************/
+.fact {
+  position: relative;
+  width: 100%;
+  padding: 45px 0;
+  text-align: center;
+}
+
+.fact .col-6 {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.fact .fact-icon {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fact .fact-text h2 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.fact .fact-text p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.fact .fact-left {
+  color: #fdbe33;
+  background: #030f27;
+}
+
+.fact .fact-right {
+  color: #030f27;
+  background: #fdbe33;
+}
+
+.fact .fact-left h2 {
+  color: #fdbe33;
+}
+
+/*******************************/
+/*********** FAQs CSS **********/
+/*******************************/
+.faqs {
+  position: relative;
+  width: 100%;
+  padding: 60px 0;
+}
+
+/* Accordion Wrapper */
+.custom-accordion .accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* Header */
+.custom-accordion .accordion-button {
+  font-weight: 600;
+  font-size: 16px;
+  color: #030f27;
+  background: #fff;
+  padding: 15px 20px;
+  transition: all 0.3s ease;
+  box-shadow: none !important;
+  border: none;
+}
+
+/* Header when active */
+.custom-accordion .accordion-button:not(.collapsed) {
+  background: #fdbe33;
+  color: #030f27;
+}
+
+/* Add toggle rotation */
+.custom-accordion .accordion-button::after {
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+.custom-accordion .accordion-button:not(.collapsed)::after {
+  transform: rotate(180deg);
+}
+
+/* Body */
+.custom-accordion .accordion-body {
+  background: #fff9db; /* light yellow */
+  padding: 20px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+  transition: all 0.3s ease;
+}
