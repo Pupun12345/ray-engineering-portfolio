@@ -127,10 +127,11 @@
   color: #ffffff;
   border: 2px solid #ffffff;
   border-radius: 0;
-  padding: 8px 16px;
+  padding: 8px 20px;
   text-decoration: none;
   background: transparent;
   transition: all 0.3s ease-in-out;
+  white-space: nowrap;   /* ✅ keeps Get A Quote in one line */
 }
 
 .nav-bar .btn:hover {
@@ -193,6 +194,7 @@
     margin: 15px auto 0;
     text-align: center;
     width: 90%;
+    white-space: nowrap; /* ✅ keep one line even on mobile */
   }
 }
 

@@ -96,12 +96,15 @@ export default function Footer() {
       <div className="container copyright">
         <div className="row">
           <div className="col-md-6">
-            <p>
-              &copy; <Link href="#">Ray Engineering</Link>, made by Smartcare.
+            <p className="copyright-text">
+              &copy; <Link href="#">Ray Engineering</Link>
+              <img src="/img/smart-logo.png" alt="Ray Engineering Logo" className="footer-logo" />, 
+              made by Smartcare
+              <img src="/img/ray-logo.png" alt="Smartcare Logo" className="footer-logo" />
             </p>
           </div>
           <div className="col-md-6">
-            <p>
+            <p className="copyright-text">
               Designed By{" "}
               <a
                 href="https://htmlcodex.com"
@@ -110,6 +113,7 @@ export default function Footer() {
               >
                 SMARTCARE
               </a>
+              <img src="/img/ray-logo.png" alt="Smartcare Logo" className="footer-logo" />
             </p>
           </div>
         </div>

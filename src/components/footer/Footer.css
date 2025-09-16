@@ -4,7 +4,7 @@
 .footer {
   position: relative;
   margin-top: 60px;
-  padding-top: 80px;
+  padding-top: 60px;
   background: #030f27;
   color: #ffffff;
   font-size: 15px;
@@ -44,13 +44,6 @@
   text-decoration: none;
   font-size: 15px;
   transition: 0.3s;
-}
-
-.footer .footer-link a::before {
-  content: "\f105";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-right: 8px;
 }
 
 .footer .footer-link a:hover {
@@ -113,27 +106,31 @@
 }
 
 .footer .newsletter input {
-  height: 48px;
+  height: 64px; /* increased height */
   flex: 1;
   border: 2px solid #fdbe33;
   border-right: none;
-  padding: 0 12px;
-  font-size: 14px;
+  padding: 0 16px; /* more padding */
+  font-size: 17px; /* bigger text */
+  border-radius: 8px 0 0 8px; /* softer rounded corners */
 }
 
+
 .footer .newsletter .btn {
-  height: 48px;
-  padding: 0 20px;
-  font-size: 14px;
+  height: 64px; /* match input */
+  padding: 0 28px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
   color: #121518;
   background: #fdbe33;
   border: 2px solid #fdbe33;
   border-left: none;
+  border-radius: 0 8px 8px 0;
   transition: 0.3s;
   cursor: pointer;
 }
+
 
 .footer .newsletter .btn:hover {
   background: #121518;
@@ -168,7 +165,7 @@
 
 /* Copyright */
 .footer .copyright {
-  padding: 20px 0;
+  padding: 15px 0;
   text-align: center;
   font-size: 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -189,16 +186,23 @@
   color: #ffffff;
 }
 
+/* ✅ Logo styling */
+.footer img.footer-logo {
+  height: 24px; /* neat consistent size */
+  width: auto;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
 /* Responsive */
 @media (max-width: 991px) {
   .footer {
-    padding-top: 60px;
+    padding-top: 40px;
   }
-
   .footer .footer-contact,
   .footer .footer-link,
   .footer .newsletter {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 }
 
@@ -206,33 +210,29 @@
   .footer .footer-social {
     justify-content: center;
   }
-
   .footer .footer-social a {
     width: 38px;
     height: 38px;
   }
-
   .footer .footer-social a svg {
     font-size: 16px;
   }
-
   .footer .footer-menu .f-menu a {
     display: inline-block;
     margin: 5px 8px;
     border: none;
   }
-
   .footer .newsletter .form {
     flex-direction: column;
   }
-
   .footer .newsletter input {
     border-right: 2px solid #fdbe33;
+    border-radius: 6px;
     margin-bottom: 10px;
   }
-
   .footer .newsletter .btn {
     width: 100%;
     border-left: 2px solid #fdbe33;
+    border-radius: 6px;
   }
 }
