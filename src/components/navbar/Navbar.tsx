@@ -63,7 +63,7 @@ export default function Navbar() {
                     <FiPhone className="top-bar-icon" />
                     <div className="top-bar-text">
                       <h3>Call Us</h3>
-                      <p>+91 9337670266</p>
+                      <p>+91-9337670266</p>
                     </div>
                   </div>
                 </div>
@@ -72,7 +72,7 @@ export default function Navbar() {
                     <FiMail className="top-bar-icon" />
                     <div className="top-bar-text">
                       <h3>Email Us</h3>
-                      <p>rayengineering1@gmail.com</p>
+                      <p>contact@rayengineering.org.in</p>
                     </div>
                   </div>
                 </div>
@@ -142,13 +142,13 @@ export default function Navbar() {
                   Team
                 </Link>
                 <Link
-                  href={route.Projects}
+                  href={route.client}
                   className={`nav-item nav-link ${
-                    pathname === route.Projects ? "active" : ""
+                    pathname === route.client ? "active" : ""
                   }`}
                   onClick={closeNavbar}
                 >
-                  Project
+                  Client
                 </Link>
                 <Link
                   href={route.Contact}
@@ -161,7 +161,7 @@ export default function Navbar() {
                 </Link>
               </div>
               <div className="ml-auto">
-                <Link href="/quote" className="btn" onClick={closeNavbar}>
+                <Link href="/contact" className="btn" onClick={closeNavbar}>
                   Get A Quote
                 </Link>
               </div>
