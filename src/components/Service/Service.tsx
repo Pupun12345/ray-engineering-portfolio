@@ -6,21 +6,21 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./Service.css";
 
 const services = [
-  { img: "/img/service-1.jpg", title: "Building Construction" },
-  { img: "/img/service-2.jpg", title: "House Renovation" },
-  { img: "/img/service-3.jpg", title: "Architecture Design" },
-  // { img: "/img/service-4.jpg", title: "Interior Design" },
-  // { img: "/img/service-5.jpg", title: "Fixing & Support" },
-  // { img: "/img/service-5.jpg", title: "Painting" },
-];
-
-const questions = [
-  "Lorem ipsum dolor sit amet?",
-  "Curabitur facilisis ornare velit?",
-  "Aliquam metus tortor auctor id?",
-  "Viverra quis sem sed aliquet?",
-  "Phasellus nec pretium mi viverra?",
-  "Praesent non felis at mauris?",
+  { 
+    img: "/img/service-1.jpg", 
+    title: "Scaffolding Services",
+    desc: "Expert supply, installation, and hire of scaffolding for industrial, commercial, and residential projects, including complex and high-risk access solutions."
+  },
+  { 
+    img: "/img/service-2.jpg", 
+    title: "Mechanical Services",
+    desc: "Comprehensive mechanical contracting, maintenance, and erection services, executed with precision and safety by a skilled team."
+  },
+  { 
+    img: "/img/service-3.jpg", 
+    title: "Waterproofing Services",
+    desc: " Advanced waterproofing solutions for diverse structures, ensuring long-lasting protection and reliability for buildings and infrastructure."
+  },
 ];
 
 export default function ServicesPage() {
@@ -61,12 +61,7 @@ export default function ServicesPage() {
                       className="img-fluid"
                     />
                     <div className="service-overlay">
-                      <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Phasellus nec pretium mi. Curabitur facilisis ornare
-                        velit non vulputate. Aliquam metus tortor, auctor id
-                        gravida condimentum, viverra quis sem.
-                      </p>
+                      <p>{service.desc}</p>
                     </div>
                   </div>
                   <div className="service-text">
@@ -81,42 +76,6 @@ export default function ServicesPage() {
           </Row>
         </Container>
       </div>
-
-      {/* FAQ Section */}
-      {/* <div className="faq">
-        <Container>
-          <div className="section-header text-center">
-            <p>Frequently Asked Question</p>
-            <h2>You May Ask</h2>
-          </div>
-          <Row>
-            <Col lg={6}>
-              <Accordion>
-                {questions.slice(0, 3).map((q, i) => (
-                  <Accordion.Item eventKey={String(i)} key={i}>
-                    <Accordion.Header>{q}</Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Accordion.Body>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
-            </Col>
-            <Col lg={6}>
-              <Accordion>
-                {questions.slice(3, 6).map((q, i) => (
-                  <Accordion.Item eventKey={String(i)} key={i}>
-                    <Accordion.Header>{q}</Accordion.Header>
-                    <Accordion.Body>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </Accordion.Body>
-                  </Accordion.Item>
-                ))}
-              </Accordion>
-            </Col>
-          </Row>
-        </Container>
-      </div> */}
     </>
   );
 }

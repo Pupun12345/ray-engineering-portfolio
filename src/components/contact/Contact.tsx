@@ -74,7 +74,7 @@ export default function ContactComponent() {
                   </div>
                   <div className="contact-text">
                     <h2>Location</h2>
-                    <p>123 Street, New York, USA</p>
+                    <p>Gandakipur, Gopiakuda, Kujanga, Jagatsinghpur</p>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -83,7 +83,7 @@ export default function ContactComponent() {
                   </div>
                   <div className="contact-text">
                     <h2>Phone</h2>
-                    <p>+012 345 67890</p>
+                    <p>+91-9337670266</p>
                   </div>
                 </div>
                 <div className="contact-item">
@@ -92,7 +92,7 @@ export default function ContactComponent() {
                   </div>
                   <div className="contact-text">
                     <h2>Email</h2>
-                    <p>info@example.com</p>
+                    <p>contact@rayengineering.org.in</p>
                   </div>
                 </div>
               </div>

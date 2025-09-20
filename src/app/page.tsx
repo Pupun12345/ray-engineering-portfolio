@@ -69,7 +69,7 @@ export default function HomeSection() {
                   ? "We Build your requirement Structure"
                   : "For Your Innovative Solutions"}
               </h1>
-              <Button href="/quote" className="animated fadeInUp">
+              <Button href="/contact" className="animated fadeInUp">
                 Get A Quote
               </Button>
             </Carousel.Caption>
@@ -90,8 +90,7 @@ export default function HomeSection() {
                 <div className="feature-text">
                   <h3>Expert Worker</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare
-                    velit non
+                    We work with expert clients, so we have expert workers to serve them.
                   </p>
                 </div>
               </div>
@@ -104,8 +103,7 @@ export default function HomeSection() {
                 <div className="feature-text">
                   <h3>Quality Work</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare
-                    velit non
+                    We value our clients so we provide the best quality work.
                   </p>
                 </div>
               </div>
@@ -118,8 +116,7 @@ export default function HomeSection() {
                 <div className="feature-text">
                   <h3>24/7 Support</h3>
                   <p>
-                    Lorem ipsum dolor sit amet elit. Phasus nec pretim ornare
-                    velit non
+                    Our support team is there to help at everytime everyday, You need.
                   </p>
                 </div>
               </div>
@@ -136,7 +133,7 @@ export default function HomeSection() {
             type="button"
             className="btn-play"
             onClick={() =>
-              handleShow(getEmbedUrl("https://www.youtube.com/watch?v=IjlYXtI2-GU"))
+              handleShow(getEmbedUrl("https://youtu.be/JAlMFLX22BY"))
             }
           >
             <span></span>

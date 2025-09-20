@@ -6,9 +6,11 @@ import Footer from "@/components/footer/Footer";
 import BackToTop from "@/components/Backtotop/Backtotop";
 
 export const metadata: Metadata = {
-  title: "My Construction Website",
-  description:
-    "Modern construction company website built with Next.js + Bootstrap",
+  title: "Ray Engineering",
+  description: "Smart, reliable, and sustainable engineering solutions",
+  icons: {
+    icon: "/img/smart-logo.png", // 👈 Place favicon.ico in /public
+  },
 };
 
 export default function RootLayout({
@@ -23,9 +25,8 @@ export default function RootLayout({
           <BootstrapProvider>
             <Navbar />
             <main className="pt-20">{children}</main>
-            {/* <About/> */}
             <Footer />
-             <BackToTop />
+            <BackToTop />
           </BootstrapProvider>
         </div>
       </body>

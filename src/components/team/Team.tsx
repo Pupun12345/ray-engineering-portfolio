@@ -11,14 +11,18 @@ import { motion } from "framer-motion";
 import "./Team.css";
 
 const teamMembers = [
-  { name: "Adam Phillips", role: "CEO & Founder", image: "/img/team-1.jpg" },
-  { name: "Dylan Adams", role: "Civil Engineer", image: "/img/team-2.jpg" },
-  { name: "Jhon Doe", role: "Interior Designer", image: "/img/team-3.jpg" },
-  { name: "Josh Dunn", role: "Painter", image: "/img/team-4.jpg" },
-  { name: "Adam Phillips", role: "CEO & Founder", image: "/img/team-1.jpg" },
-  { name: "Dylan Adams", role: "Civil Engineer", image: "/img/team-2.jpg" },
-  { name: "Jhon Doe", role: "Interior Designer", image: "/img/team-3.jpg" },
-  { name: "Josh Dunn", role: "Painter", image: "/img/team-4.jpg" },
+  { name: "SIBA SAHOO", role: "GENERAL MANAGER", image: "/img/GM.jpg" },
+  { name: "NIRANJAN MOHAPATRA", role: "CO-ORDINATOR", image: "/img/nm.jpg" },
+  { name: "SK NIAZ AHEMED", role: "TASK IN-CHARGE", image: "/img/sk.jpg" },
+  { name: "TRIBHUBAN SAHOO", role: "PLANNING ENGINEER", image: "/img/tb.jpg" },
+  { name: "PRAKASH CH. PRUSTY", role: "PPL IN-CHARGE", image: "/img/pcp.jpg" },
+  { name: "SHRIDHAR DAS", role: "ACCOUNTANT", image: "/img/sd.jpg" },
+  {
+    name: "HIMANSU SEKHAR PARIDA",
+    role: "SOFTWARE ENGINEER",
+    image: "/img/hm.jpg",
+  },
+  { name: "NANDAN MISHRA", role: "HR", image: "/img/nnm.jpg" },
 ];
 
 // Animation variants
@@ -54,7 +58,7 @@ export default function Team() {
           </div>
           <Row>
             {teamMembers.map((member, index) => (
-              <Col key={index} lg={3} md={6} className="mb-4">
+              <Col key={index} lg={3} md={6} className="mb-4 d-flex">
                 <motion.div
                   variants={cardVariant}
                   initial="hidden"
@@ -65,14 +69,15 @@ export default function Team() {
                     delay: index * 0.15,
                     ease: "easeOut",
                   }}
+                  className="w-100"
                 >
                   <Card className="team-card border-0 shadow-lg text-center">
                     <div className="team-img-wrapper">
                       <Image
                         src={member.image}
                         alt={member.name}
-                        width={400}
-                        height={400}
+                        fill
+                        sizes="(max-width: 768px) 100vw, 400px"
                         className="team-img"
                       />
                       <div className="overlay">

@@ -22,13 +22,13 @@ export default function Footer() {
             <div className="footer-contact">
               <h2>Office Contact</h2>
               <p>
-                <FaMapMarkerAlt /> 123 Street, New York, USA
+                <FaMapMarkerAlt /> Gandakipur, Gopiakuda, Kujanga, Jagatsinghpur
               </p>
               <p>
-                <FaPhoneAlt /> +012 345 67890
+                <FaPhoneAlt /> +91- 9337670266
               </p>
               <p>
-                <FaEnvelope /> info@example.com
+                <FaEnvelope /> contact@rayengineering.org.in
               </p>
               <div className="footer-social">
                 <Link href="#"><FaTwitter /></Link>
@@ -44,11 +44,11 @@ export default function Footer() {
           <div className="col-md-6 col-lg-3">
             <div className="footer-link">
               <h2>Services Areas</h2>
-              <Link href="#">Building Construction</Link>
-              <Link href="#">House Renovation</Link>
-              <Link href="#">Architecture Design</Link>
-              <Link href="#">Interior Design</Link>
-              <Link href="#">Painting</Link>
+              <Link href="#">Scaffolding Services</Link>
+              <Link href="#">Mechanical Services</Link>
+              <Link href="#">Waterproofing Services</Link>
+              <Link href="#">Access Staircases</Link>
+              <Link href="#">Event Scaffolding</Link>
             </div>
           </div>
 
@@ -56,11 +56,11 @@ export default function Footer() {
           <div className="col-md-6 col-lg-3">
             <div className="footer-link">
               <h2>Useful Pages</h2>
-              <Link href="#">About Us</Link>
-              <Link href="#">Contact Us</Link>
-              <Link href="#">Our Team</Link>
-              <Link href="#">Projects</Link>
-              <Link href="#">Testimonial</Link>
+              <Link href="./about">About Us</Link>
+              <Link href="./contact">Contact Us</Link>
+              <Link href="./team">Our Team</Link>
+              <Link href="./client">Our Clients</Link>
+              <Link href="./contact">Contact Us</Link>
             </div>
           </div>
 
@@ -69,8 +69,7 @@ export default function Footer() {
             <div className="newsletter">
               <h2>Newsletter</h2>
               <p>
-                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi.
-                Curabitur facilisis ornare velit non vulpu
+                Sign up to be the first to know about new projects, promotions, and industry news.
               </p>
               <div className="form">
                 <input className="form-control" placeholder="Email here" />
