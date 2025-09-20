@@ -7,7 +7,7 @@ import "./Service.css";
 
 const services = [
   { 
-    img: "/img/service-1.jpg", 
+    img: "/img/service-3.jpg", 
     title: "Scaffolding Services",
     desc: "Expert supply, installation, and hire of scaffolding for industrial, commercial, and residential projects, including complex and high-risk access solutions."
   },
@@ -17,7 +17,7 @@ const services = [
     desc: "Comprehensive mechanical contracting, maintenance, and erection services, executed with precision and safety by a skilled team."
   },
   { 
-    img: "/img/service-3.jpg", 
+    img: "/img/service-1.jpg", 
     title: "Waterproofing Services",
     desc: " Advanced waterproofing solutions for diverse structures, ensuring long-lasting protection and reliability for buildings and infrastructure."
   },

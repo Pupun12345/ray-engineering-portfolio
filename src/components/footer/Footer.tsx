@@ -106,13 +106,14 @@ export default function Footer() {
             <p className="copyright-text">
               Designed By{" "}
               <a
-                href="https://htmlcodex.com"
+                href="https://www.linkedin.com/company/smartcare-solutions-pvt-ltd/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 SMARTCARE
               </a>
               <img src="/img/ray-logo.png" alt="Smartcare Logo" className="footer-logo" />
+              {" "}+91 78530 31366
             </p>
           </div>
         </div>
