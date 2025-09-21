@@ -89,7 +89,7 @@ export default function AboutPage() {
             <Col lg={7} md={6}>
               <div className="section-header text-left">
                 <p>Welcome to RayEngineering</p>
-                <h2>25 Years Experience</h2>
+                <h2>18 Years Experience</h2>
               </div>
               <div className="about-text">
                 <p>
