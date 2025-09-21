@@ -11,9 +11,9 @@ import { motion } from "framer-motion";
 import "./Team.css";
 
 const teamMembers = [
-  { name: "SIBA SAHOO", role: "GENERAL MANAGER", image: "/img/GM.jpg" },
+  { name: "SIBA SAHOO", role: "MANAGER", image: "/img/GM.jpg" },
   { name: "NIRANJAN MOHAPATRA", role: "CO-ORDINATOR", image: "/img/nm.jpg" },
-  { name: "SK NIAZ AHEMED", role: "TASK IN-CHARGE", image: "/img/sk.jpg" },
+  { name: "SK NIAZ AHEMED", role: "SCAFFOLDING IN-CHARGE", image: "/img/sk.jpg" },
   { name: "TRIBHUBAN SAHOO", role: "PLANNING ENGINEER", image: "/img/tb.jpg" },
   { name: "PRAKASH CH. PRUSTY", role: "PPL IN-CHARGE", image: "/img/pcp.jpg" },
   { name: "SHRIDHAR DAS", role: "ACCOUNTANT", image: "/img/sd.jpg" },

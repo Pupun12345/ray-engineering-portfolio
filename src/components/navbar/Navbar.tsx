@@ -63,7 +63,7 @@ export default function Navbar() {
                     <FiPhone className="top-bar-icon" />
                     <div className="top-bar-text">
                       <h3>Call Us</h3>
-                      <p>+91-9337670266</p>
+                      <p>+91-9937916336</p>
                     </div>
                   </div>
                 </div>

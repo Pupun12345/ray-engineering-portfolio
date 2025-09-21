@@ -25,7 +25,7 @@ export default function Footer() {
                 <FaMapMarkerAlt /> Gandakipur, Gopiakuda, Kujanga, Jagatsinghpur
               </p>
               <p>
-                <FaPhoneAlt /> +91- 9337670266
+                <FaPhoneAlt /> +91- 9337670266 / 9937916336
               </p>
               <p>
                 <FaEnvelope /> contact@rayengineering.org.in
