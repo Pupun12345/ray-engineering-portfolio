@@ -72,7 +72,7 @@ export default function Navbar() {
                     <FiMail className="top-bar-icon" />
                     <div className="top-bar-text">
                       <h3>Email Us</h3>
-                      <p>contact@rayengineering.org.in</p>
+                      <p>md@rayengineering.co</p>
                     </div>
                   </div>
                 </div>

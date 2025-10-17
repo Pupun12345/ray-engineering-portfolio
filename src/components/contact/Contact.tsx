@@ -92,7 +92,7 @@ export default function ContactComponent() {
                   </div>
                   <div className="contact-text">
                     <h2>Email</h2>
-                    <p>contact@rayengineering.org.in</p>
+                    <p>md@rayengineering.co</p>
                   </div>
                 </div>
               </div>
