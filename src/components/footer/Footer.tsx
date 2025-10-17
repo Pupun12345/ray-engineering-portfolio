@@ -10,6 +10,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
+
 import "./Footer.css";
 
 export default function Footer() {
@@ -28,7 +29,7 @@ export default function Footer() {
                 <FaPhoneAlt /> +91- 9337670266 / 9937916336
               </p>
               <p>
-                <FaEnvelope /> contact@rayengineering.org.in
+                <FaEnvelope /> md@rayengineering.co
               </p>
               <div className="footer-social">
                 <Link href="#"><FaTwitter /></Link>
