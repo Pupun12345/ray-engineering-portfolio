@@ -167,7 +167,7 @@ export default function ClientsComponent() {
 
           <Row>
             <Col className="text-center mt-3">
-              <Button className="load-more-btn">Load More</Button>
+              {/* <Button className="load-more-btn">Load More</Button> */}
             </Col>
           </Row>
         </Container>
